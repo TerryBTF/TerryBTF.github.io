@@ -137,9 +137,9 @@ const education = [
 ]
 
 const skills = [
-  ['Programming', 'C++, Python, MATLAB'],
-  ['Robotics & AI', 'ROS2, PyTorch, YOLO, PyBullet'],
-  ['Tools', 'Linux, Git, Gazebo, Rviz, SolidWorks'],
+  ['Programming', 'C++, Python, MATLAB, Linux, Git'],
+  ['Robot Learning', 'RL (PPO), imitation learning, world models, PyTorch'],
+  ['Simulation & Robotics', 'Isaac Lab, NVIDIA Newton / Warp, PyElastica, ROS2, Gazebo'],
   ['Languages', 'English, Mandarin, Dutch'],
 ]
 
