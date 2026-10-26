@@ -24,8 +24,8 @@ const projects = [
     summary:
       'Radar-dominant 3D object detection pipeline on View-of-Delft with image-assisted point-level fusion and CenterPoint-style BEV detection.',
     details: [
-      'Implemented cross-modal projection, feature sampling, fusion modules, LiDAR teacher training, and training-time distillation.',
-      'Designed reproducible ablations across baseline, fusion, teacher, and distillation settings under constrained compute.',
+      'Implemented cross-modal point fusion, BEV fusion refinement, training-only LiDAR-guided geometry supervision, and ROI-aware loss weighting.',
+      'Improved driving-corridor mAP from 53.59 to 65.75 over the radar-only baseline, with step-by-step ablations under constrained compute.',
     ],
     detailsUrl: 'https://github.com/TerryBTF/radar-camera-fusion-vod',
   },
