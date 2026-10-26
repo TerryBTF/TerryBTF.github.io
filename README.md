@@ -18,9 +18,9 @@ npm run build
 The Vite base path is configured for:
 
 ```text
-https://terrybtf.github.io/Terry-Zhang.github.io/
+https://terrybtf.github.io/
 ```
 
 ## Deploy To GitHub Pages
 
-Push this project to the `Terry-Zhang.github.io` repository and configure GitHub Pages to deploy from GitHub Actions or the built `dist` folder.
+Push this project to the `TerryBTF.github.io` repository and configure GitHub Pages to deploy from GitHub Actions or the built `dist` folder.
