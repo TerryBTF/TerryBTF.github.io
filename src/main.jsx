@@ -27,7 +27,7 @@ const projects = [
       'Implemented cross-modal projection, feature sampling, fusion modules, LiDAR teacher training, and training-time distillation.',
       'Designed reproducible ablations across baseline, fusion, teacher, and distillation settings under constrained compute.',
     ],
-    detailsUrl: 'https://github.com/TerryBTF/AMP_Group12',
+    detailsUrl: 'https://github.com/TerryBTF/radar-camera-fusion-vod',
   },
   {
     title: 'Carry-No-Spill',
