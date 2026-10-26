@@ -835,7 +835,7 @@ function App() {
             <a href="mailto:zhangruifang0913@outlook.com"><Mail size={18} /> Email</a>
             <a href="tel:+31626138070"><Phone size={18} /> Phone</a>
             <a href="https://github.com/TerryBTF" target="_blank" rel="noreferrer"><Github size={18} /> GitHub: TerryBTF</a>
-            <span><Navigation size={18} /> LinkedIn: Ruifang (Terry) Zhang</span>
+            <a href="https://www.linkedin.com/in/terry-ruifang-zhang/" target="_blank" rel="noreferrer"><Navigation size={18} /> LinkedIn: Ruifang (Terry) Zhang</a>
             <span><MapPin size={18} /> Delft, Netherlands</span>
           </div>
         </section>
