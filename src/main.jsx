@@ -102,9 +102,8 @@ const experience = [
     location: 'Shanghai, China',
     date: 'Mar 2023 - Aug 2025',
     points: [
-      'Worked on ADAS systems involving sensing, perception, and control pipelines in real-world driving environments.',
-      'Analyzed and benchmarked sensor fusion and positioning systems through vehicle testing and performance validation.',
-      'Designed evaluation workflows covering scenario definition, data collection, and system-level metrics.',
+      'Benchmarked sensor fusion and localization systems through vehicle testing, from scenario definition and data collection to system-level evaluation metrics.',
+      'Worked across sensing, perception, and control pipelines in real-world driving.',
     ],
     photos: ['porsche-01.jpg', 'porsche-02.jpg'],
   },
@@ -114,9 +113,8 @@ const experience = [
     location: 'Nanjing, China',
     date: 'Apr 2019 - Dec 2022',
     points: [
-      'Managed embedded-system lifecycles combining sensing, perception, and control modules.',
-      'Coordinated integration across software, hardware, HIL, and vehicle-level validation teams.',
-      'Led system debugging with CAN tools and diagnostic workflows while supporting FuSa and cybersecurity compliance.',
+      'Led integration of sensing, perception, and control modules across software, hardware, HIL, and vehicle-level validation teams.',
+      'Drove system debugging with CAN and diagnostic tools, supporting functional safety (FuSa) and cybersecurity compliance.',
     ],
     photos: ['ford-01.jpg', 'ford-02.jpg'],
   },
