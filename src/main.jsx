@@ -3,12 +3,10 @@ import { createRoot } from 'react-dom/client'
 import {
   BrainCircuit,
   BriefcaseBusiness,
-  Compass,
   Github,
   Mail,
   MapPin,
   Navigation,
-  Phone,
   Radar,
   Route,
   Sparkles,
@@ -58,6 +56,18 @@ const projects = [
 ]
 
 const activeSignals = [
+  {
+    title: 'M.Sc. Thesis: World-Action Models for Soft-Arm Manipulation in Clutter',
+    meta: 'TU Delft / Sep 2025 - Present',
+    tag: 'Robot Learning',
+    summary:
+      'Teaching a two-tendon soft continuum arm to grasp a target object among other objects without touching them, using a world-action model trained on RL-generated data.',
+    details: [
+      'Built a GPU-parallel soft-arm simulation: strain-based Cosserat rod with contact on NVIDIA Newton / Warp, wrapped as Isaac Lab RL environments.',
+      'Trained a PPO base grasping skill with a staged wrap-and-hold reward, as the data source for the clutter task.',
+      'Next: generate labelled grasp attempts in clutter and train a world-action model that jointly predicts future arm-object interaction and future actions, then transfer to the real arm.',
+    ],
+  },
   {
     title: 'WBCD 2026 Group 4: Bimanual Robot Learning for Deformable Object Manipulation',
     meta: 'IEEE ICRA 2026 Competition / What Bimanuals Can Do',
@@ -639,7 +649,6 @@ function App() {
           <a href="#experience">Industry Notes</a>
           <a href="#education">Education</a>
           <a href="#skills">Skills</a>
-          <a href="#wild">Wild</a>
           <a href="#hobbies">Hobbies</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -656,9 +665,9 @@ function App() {
             <h1 className="sr-only">Terry Zhang</h1>
             <ParticleTitle />
             <p className="hero-copy">
-              Measuring nature by foot and decoding the road by logic.
+              Robotics M.Sc. at TU Delft, working on world models and RL for soft-arm manipulation.
               <br />
-              Currently bridging ADAS expertise with Robotics & AI at TU Delft to build a more seamless future.
+              Previously 6 years in automotive ADAS at Porsche and Ford.
             </p>
           </div>
           <div className="hero-portrait" aria-hidden="true">
@@ -793,25 +802,6 @@ function App() {
           </div>
         </section>
 
-        <section className="section wild-section" id="wild" aria-labelledby="wild-title">
-          <div className="section-heading">
-            <SectionTitle eyebrow="Travel" title="Wind of the Wild" id="wild-title" />
-            <p>
-              A future gallery for trails, cities, coastlines, and quiet travel moments. The layout is ready for photos and short field notes.
-            </p>
-          </div>
-          <div className="wild-grid">
-            {['High Trails', 'Open Water', 'Night Cities'].map((label, index) => (
-              <article className="wild-card" key={label}>
-                <Compass size={24} aria-hidden="true" />
-                <span>Slot 0{index + 1}</span>
-                <h3>{label}</h3>
-                <p>Photo and story coming soon.</p>
-              </article>
-            ))}
-          </div>
-        </section>
-
         <section className="section hobbies-section" id="hobbies" aria-labelledby="hobbies-title">
           <div className="section-heading">
             <SectionTitle eyebrow="Hobbies" title="Echoes from the Valley" id="hobbies-title" />
@@ -833,7 +823,6 @@ function App() {
           </div>
           <div className="contact-links">
             <a href="mailto:zhangruifang0913@outlook.com"><Mail size={18} /> Email</a>
-            <a href="tel:+31626138070"><Phone size={18} /> Phone</a>
             <a href="https://github.com/TerryBTF" target="_blank" rel="noreferrer"><Github size={18} /> GitHub: TerryBTF</a>
             <a href="https://www.linkedin.com/in/terry-ruifang-zhang/" target="_blank" rel="noreferrer"><Navigation size={18} /> LinkedIn: Ruifang (Terry) Zhang</a>
             <span><MapPin size={18} /> Delft, Netherlands</span>
