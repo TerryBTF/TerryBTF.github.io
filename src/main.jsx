@@ -64,7 +64,7 @@ const activeSignals = [
       'Teaching a two-tendon soft continuum arm to grasp a target object among other objects without touching them, using a world-action model trained on RL-generated data.',
     details: [
       'Built a GPU-parallel soft-arm simulation: strain-based Cosserat rod with contact on NVIDIA Newton / Warp, wrapped as Isaac Lab RL environments.',
-      'Trained a PPO base grasping skill with a staged wrap-and-hold reward, as the data source for the clutter task.',
+      'Trained an RL base grasping skill with a staged wrap-and-hold reward, as the data source for the clutter task.',
       'Next: generate labelled grasp attempts in clutter and train a world-action model that jointly predicts future arm-object interaction and future actions, then transfer to the real arm.',
     ],
   },
@@ -123,7 +123,7 @@ const experience = [
 const education = [
   {
     school: 'Delft University of Technology',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/1/1b/Zegel_Technische_Universiteit_Delft.svg',
+    logo: 'https://upload.wikimedia.org/wikipedia/en/9/98/Delft_University_of_Technology_logo.svg',
     degree: 'M.Sc. in Robotics',
     location: 'Delft, Netherlands',
     date: 'Sep 2025 - Present',
@@ -137,7 +137,7 @@ const education = [
   },
   {
     school: 'Yuan-Ze University',
-    logo: 'https://www.yzu.edu.tw/templates/yzu_2016_v2/ui/logo-sm.png',
+    logo: 'https://www.yzu.edu.tw/templates/yzu_2016_v2/ui/logo-150.png',
     degree: 'B.Sc. in Mechanical Engineering / GPA 3.58/4.0 / Top 12%',
     location: 'Taoyuan, Taiwan',
     date: 'Sep 2013 - Jun 2017',
@@ -146,7 +146,7 @@ const education = [
 
 const skills = [
   ['Programming', 'C++, Python, MATLAB, Linux, Git'],
-  ['Robot Learning', 'RL (PPO), imitation learning, world models, PyTorch'],
+  ['Robot Learning', 'RL, imitation learning, world models, PyTorch'],
   ['Simulation & Robotics', 'Isaac Lab, NVIDIA Newton / Warp, PyElastica, ROS2, Gazebo'],
   ['Languages', 'English, Mandarin, Dutch'],
 ]

@@ -285,7 +285,7 @@ nav a:hover {
 
 .hero-portrait {
   aspect-ratio: 0.72;
-  justify-self: end;
+  justify-self: center;
   max-height: min(56vh, 480px);
   max-width: 340px;
   opacity: 0.9;
@@ -465,8 +465,7 @@ p {
 .signal-card-grid {
   display: grid;
   gap: 18px;
-  grid-template-columns: minmax(0, 1fr);
-  max-width: 980px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .signal-card {
@@ -531,19 +530,19 @@ li + li {
     rgba(9, 5, 17, 0.88);
   border-block: 1px solid rgba(255, 93, 215, 0.16);
   display: grid;
-  gap: 56px;
-  grid-template-columns: minmax(260px, 0.72fr) minmax(320px, 1fr);
+  gap: 0;
+  grid-template-columns: minmax(0, 1fr);
 }
 
 .sticky-heading {
   align-self: start;
-  position: sticky;
-  top: 100px;
 }
 
 .timeline {
+  align-items: start;
   display: grid;
   gap: 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .timeline-item {
@@ -1050,7 +1049,25 @@ li + li {
   }
 }
 
+@media (max-width: 1280px) {
+  .signal-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .signal-card-grid > :first-child {
+    grid-column: 1 / -1;
+  }
+
+  .timeline {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 @media (max-width: 940px) {
+  .signal-card-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
   .hero,
   .intro,
   .split-section,
