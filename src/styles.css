@@ -33,7 +33,7 @@ html {
 }
 
 body {
-  font-size: 1.0625rem;
+  font-size: 1.125rem;
   margin: 0;
   min-width: 320px;
   overflow-x: hidden;
@@ -97,7 +97,7 @@ nav {
 nav a {
   color: #d8c8e9;
   font-family: Orbitron, Rajdhani, sans-serif;
-  font-size: 0.78rem;
+  font-size: 0.86rem;
   font-weight: 650;
   letter-spacing: 0.04em;
   transition: color 220ms ease, text-shadow 220ms ease;
@@ -266,7 +266,7 @@ nav a:hover {
 .section-kicker {
   color: var(--cyan);
   font-family: Orbitron, Rajdhani, sans-serif;
-  font-size: clamp(0.76rem, 1vw, 0.86rem);
+  font-size: clamp(0.82rem, 1vw, 0.95rem);
   font-weight: 800;
   letter-spacing: 0.14em;
   margin: 0 0 14px;
@@ -394,7 +394,7 @@ h2 {
 h3 {
   color: var(--ink);
   font-family: Orbitron, Rajdhani, sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   line-height: 1.3;
   margin: 0;
 }
@@ -447,7 +447,7 @@ p {
   border-radius: 8px;
   color: #ffffff;
   font-family: Orbitron, Rajdhani, sans-serif;
-  font-size: 0.78rem;
+  font-size: 0.85rem;
   font-weight: 800;
   letter-spacing: 0.08em;
   margin-top: auto;
@@ -485,7 +485,7 @@ p {
   align-items: center;
   color: var(--pink);
   display: flex;
-  font-size: 0.78rem;
+  font-size: 0.86rem;
   font-weight: 800;
   gap: 9px;
   margin-bottom: 22px;
@@ -509,7 +509,7 @@ p {
 .meta,
 .date {
   color: var(--dim);
-  font-size: 0.95rem;
+  font-size: 1rem;
   margin: 7px 0 0;
 }
 
@@ -610,7 +610,7 @@ li + li {
 .skill-row span {
   color: var(--pink);
   display: block;
-  font-size: 0.78rem;
+  font-size: 0.86rem;
   font-weight: 800;
   margin: 18px 0 10px;
   text-transform: uppercase;
@@ -702,7 +702,7 @@ li + li {
 
 .skill-row strong {
   color: var(--ink);
-  font-size: 1.02rem;
+  font-size: 1.1rem;
 }
 
 .education-globe {
@@ -821,7 +821,7 @@ li + li {
   box-shadow: 0 0 22px rgba(255, 93, 215, 0.2);
   color: #ffffff;
   display: flex;
-  font-size: 0.74rem;
+  font-size: 0.8rem;
   font-weight: 800;
   min-height: 34px;
   padding: 7px 10px;
@@ -836,7 +836,7 @@ li + li {
 .geo-label {
   color: rgba(247, 234, 255, 0.72);
   font-family: Orbitron, Rajdhani, sans-serif;
-  font-size: 0.68rem;
+  font-size: 0.76rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   position: absolute;
@@ -857,8 +857,8 @@ li + li {
   border-top: 1px solid rgba(255, 93, 215, 0.22);
   color: #ffffff;
   display: grid;
-  gap: 32px;
-  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 28px 32px;
+  grid-template-columns: auto minmax(0, 1fr);
   padding: 70px clamp(22px, 5vw, 80px);
 }
 
@@ -879,7 +879,8 @@ li + li {
 .contact-links {
   display: grid;
   gap: 12px;
-  min-width: 260px;
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .contact-links a,
@@ -1076,6 +1077,10 @@ li + li {
     grid-template-columns: 1fr;
   }
 
+  .contact-links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .hero-portrait {
     justify-self: start;
     max-height: 400px;
@@ -1145,5 +1150,11 @@ li + li {
 
   .experience-photo-grid {
     grid-column: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-links {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
