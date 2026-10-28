@@ -274,6 +274,11 @@ nav a:hover {
   text-shadow: 0 0 14px rgba(104, 246, 255, 0.45);
 }
 
+.hero-copy span {
+  display: block;
+  text-wrap: balance;
+}
+
 .hero-copy {
   color: #f7eaff;
   font-size: clamp(1.2rem, 1.6vw, 1.45rem);
@@ -857,8 +862,8 @@ li + li {
   border-top: 1px solid rgba(255, 93, 215, 0.22);
   color: #ffffff;
   display: grid;
-  gap: 28px 32px;
-  grid-template-columns: auto minmax(0, 1fr);
+  gap: 28px;
+  grid-template-columns: minmax(0, 1fr);
   padding: 70px clamp(22px, 5vw, 80px);
 }
 
@@ -877,10 +882,9 @@ li + li {
 }
 
 .contact-links {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   gap: 12px;
-  grid-column: 1 / -1;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .contact-links a,
@@ -892,8 +896,10 @@ li + li {
   color: rgba(255, 255, 255, 0.88);
   display: flex;
   gap: 10px;
+  max-width: 100%;
   min-height: 46px;
-  padding: 0 14px;
+  overflow-wrap: anywhere;
+  padding: 0 18px;
 }
 
 @keyframes gridDrift {
@@ -1077,9 +1083,6 @@ li + li {
     grid-template-columns: 1fr;
   }
 
-  .contact-links {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 
   .hero-portrait {
     justify-self: start;
@@ -1150,11 +1153,5 @@ li + li {
 
   .experience-photo-grid {
     grid-column: auto;
-  }
-}
-
-@media (max-width: 640px) {
-  .contact-links {
-    grid-template-columns: minmax(0, 1fr);
   }
 }

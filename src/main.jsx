@@ -9,7 +9,6 @@ import {
   Navigation,
   Radar,
   Route,
-  Sparkles,
 } from 'lucide-react'
 import './styles.css'
 
@@ -663,9 +662,9 @@ function App() {
             <h1 className="sr-only">Terry Zhang</h1>
             <ParticleTitle />
             <p className="hero-copy">
-              Robotics M.Sc. at TU Delft, working on world models and RL for soft-arm manipulation.
-              <br />
-              Previously 6 years in automotive ADAS at Porsche and Ford.
+              <span>Robotics M.Sc. at TU Delft.</span>
+              <span>World models and RL for soft-arm manipulation.</span>
+              <span>Previously 6 years in automotive ADAS at Porsche and Ford.</span>
             </p>
           </div>
           <div className="hero-portrait" aria-hidden="true">
@@ -815,12 +814,11 @@ function App() {
         </section>
 
         <section className="contact-band" id="contact" aria-labelledby="contact-title">
-          <Sparkles className="contact-spark" size={28} aria-hidden="true" />
           <div>
             <SectionTitle eyebrow="Ping the Station" title="Contact" id="contact-title" />
           </div>
           <div className="contact-links">
-            <a href="mailto:zhangruifang0913@outlook.com"><Mail size={18} /> Email</a>
+            <a href="mailto:zhangruifang0913@outlook.com"><Mail size={18} /> zhangruifang0913@outlook.com</a>
             <a href="https://github.com/TerryBTF" target="_blank" rel="noreferrer"><Github size={18} /> GitHub: TerryBTF</a>
             <a href="https://www.linkedin.com/in/terry-ruifang-zhang/" target="_blank" rel="noreferrer"><Navigation size={18} /> LinkedIn: Ruifang (Terry) Zhang</a>
             <span><MapPin size={18} /> Delft, Netherlands</span>
