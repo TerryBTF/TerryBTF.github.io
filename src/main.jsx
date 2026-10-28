@@ -642,9 +642,9 @@ function App() {
     <>
       <header className="site-header">
         <nav aria-label="Primary navigation">
-          <a href="#signals">Signals</a>
+          <a href="#signals">Current Work</a>
           <a href="#projects">Projects</a>
-          <a href="#experience">Industry Notes</a>
+          <a href="#experience">Experience</a>
           <a href="#education">Education</a>
           <a href="#skills">Skills</a>
           <a href="#hobbies">Hobbies</a>
@@ -675,7 +675,7 @@ function App() {
 
         <section className="section signals-section" id="signals" aria-labelledby="signals-title">
           <div className="section-heading">
-            <SectionTitle eyebrow="Current Work" title="Signals in Transmission" id="signals-title" />
+            <SectionTitle eyebrow="Signals in Transmission" title="Current Work" id="signals-title" />
           </div>
           <div className="signal-card-grid">
             {activeSignals.map((signal) => (
@@ -699,7 +699,7 @@ function App() {
 
         <section className="section" id="projects" aria-labelledby="projects-title">
           <div className="section-heading">
-            <SectionTitle eyebrow="Projects" title="Prototypes on the Trail" id="projects-title" />
+            <SectionTitle eyebrow="Prototypes on the Trail" title="Projects" id="projects-title" />
           </div>
           <div className="project-grid">
             {projects.map((project) => {
@@ -729,7 +729,7 @@ function App() {
 
         <section className="section split-section" id="experience" aria-labelledby="experience-title">
           <div className="section-heading sticky-heading">
-            <SectionTitle eyebrow="Industry Notes" title="Signals from the road" id="experience-title" />
+            <SectionTitle eyebrow="Signals from the Road" title="Experience" id="experience-title" />
             <p>
               Two chapters from real-world ADAS work: sensing, perception, control, integration, vehicle testing, and validation workflows.
             </p>
@@ -766,7 +766,7 @@ function App() {
         <section className="section education-section" id="education" aria-labelledby="education-title">
           <div>
             <div className="section-heading">
-              <SectionTitle eyebrow="Education" title="Coordinates of the Compass" id="education-title" />
+              <SectionTitle eyebrow="Coordinates of the Compass" title="Education" id="education-title" />
             </div>
             <div className="education-list">
               {education.map((item) => (
@@ -788,7 +788,7 @@ function App() {
 
         <section className="section skills-section" id="skills" aria-labelledby="skills-title">
           <div className="section-heading">
-            <SectionTitle eyebrow="Skills" title="The Gear in the Pack" id="skills-title" />
+            <SectionTitle eyebrow="The Gear in the Pack" title="Skills" id="skills-title" />
           </div>
           <div className="skill-list">
             {skills.map(([label, value]) => (
@@ -802,7 +802,7 @@ function App() {
 
         <section className="section hobbies-section" id="hobbies" aria-labelledby="hobbies-title">
           <div className="section-heading">
-            <SectionTitle eyebrow="Hobbies" title="Echoes from the Valley" id="hobbies-title" />
+            <SectionTitle eyebrow="Echoes from the Valley" title="Hobbies" id="hobbies-title" />
           </div>
           <div className="hobby-grid">
             {hobbies.map(([title, description]) => (
@@ -817,7 +817,7 @@ function App() {
         <section className="contact-band" id="contact" aria-labelledby="contact-title">
           <Sparkles className="contact-spark" size={28} aria-hidden="true" />
           <div>
-            <SectionTitle eyebrow="Contact" title="Ping the Station" id="contact-title" />
+            <SectionTitle eyebrow="Ping the Station" title="Contact" id="contact-title" />
           </div>
           <div className="contact-links">
             <a href="mailto:zhangruifang0913@outlook.com"><Mail size={18} /> Email</a>
